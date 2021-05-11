@@ -1,6 +1,6 @@
 {
   "name": "@icehunter/eslint-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Ryan Wilson <syndicated.life@gmail.com>",
   "license": "MIT",
   "description": "standard eslint-config for app/react/base libraries",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Icehunter/eslint-config/issues"
   },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "eslint": "^7.26.0",
