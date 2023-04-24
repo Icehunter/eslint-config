@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'react-app', 'plugin:jsx-a11y/recommended', 'prettier'],
+  extends: ['eslint:recommended', '@icehunter/react-app', 'plugin:jsx-a11y/recommended', 'prettier'],
   plugins: ['@typescript-eslint', 'jsx-a11y', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -31,7 +31,7 @@ module.exports = {
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'react-app',
+        '@icehunter/react-app',
         'plugin:jsx-a11y/recommended',
         'prettier'
       ],
