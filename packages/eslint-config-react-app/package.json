@@ -25,5 +25,6 @@
     "@rushstack/eslint-patch": "^1.2.0",
     "babel-preset-react-app": "^10.0.1",
     "confusing-browser-globals": "^1.0.11"
-  }
+  },
+  "gitHead": "5284b8528c1acd55fc8824f76e637f968ac7a478"
 }

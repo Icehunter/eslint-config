@@ -23,5 +23,6 @@
   },
   "dependencies": {
     "@icehunter/eslint-config-react-app": "^0.2.0"
-  }
+  },
+  "gitHead": "5284b8528c1acd55fc8824f76e637f968ac7a478"
 }
