@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint:recommended', '@icehunter/react-app', 'plugin:jsx-a11y/recommended', 'prettier'],
-  plugins: ['@typescript-eslint', 'jsx-a11y', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
