@@ -1,6 +1,6 @@
 {
   "name": "@icehunter/eslint-config",
-  "version": "1.6.1",
+  "version": "2.0.0",
   "author": "Ryan Wilson <syndicated.life@gmail.com>",
   "license": "MIT",
   "description": "standard eslint-config for app/react/base libraries",
