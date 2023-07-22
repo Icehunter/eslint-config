@@ -17,12 +17,45 @@ module.exports = {
     node: true
   },
   rules: {
-    'sort-imports': 'error',
+    // disable the rule for all files
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'arrow-parens': 'error',
+    camelcase: [
+      'error',
+      {
+        ignoreDestructuring: true,
+        ignoreImports: true,
+        ignoreGlobals: true,
+        allow: []
+      }
+    ],
+    complexity: ['error', 10],
+    'consistent-return': 'error',
+    'default-param-last': 'error',
+    'dot-notation': 'error',
+    'func-style': ['error', 'expression'],
+    'lines-between-class-members': 2,
+    'no-await-in-loop': 'error',
+    'no-constant-binary-expression': 'error',
+    'no-nested-ternary': 'error',
+    'no-unreachable-loop': 'warn',
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'lodash',
+            message: 'Please use ramnda instead.'
+          }
+        ]
+      }
+    ],
+    'padding-line-between-statements': 'off',
     'prettier/prettier': 'error',
+    radix: 'error',
     // to prevent issues with deps
     'react-hooks/exhaustive-deps': 'error',
-    // disable the rule for all files
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    'sort-imports': ['error', { allowSeparatedGroups: true }]
   },
   overrides: [
     {
@@ -38,7 +71,35 @@ module.exports = {
       rules: {
         // enable the rule specifically for TypeScript files
         '@typescript-eslint/explicit-function-return-type': ['error'],
-        '@typescript-eslint/no-explicit-any': 'error'
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/padding-line-between-statements': [
+          'error',
+          {
+            blankLine: 'always',
+            prev: 'block-like',
+            next: '*'
+          },
+          {
+            blankLine: 'always',
+            prev: '*',
+            next: 'block-like'
+          },
+          {
+            blankLine: 'always',
+            prev: '*',
+            next: ['multiline-expression']
+          },
+          {
+            blankLine: 'always',
+            prev: '*',
+            next: 'return'
+          },
+          {
+            blankLine: 'always',
+            prev: '*',
+            next: 'export'
+          }
+        ]
       }
     }
   ],
