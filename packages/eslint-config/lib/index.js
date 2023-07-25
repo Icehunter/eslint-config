@@ -60,14 +60,16 @@ module.exports = {
     radix: 'error',
     // to prevent issues with deps
     'react-hooks/exhaustive-deps': 'error',
-    'sort-imports': ['error', { allowSeparatedGroups: true }],
     'import/order': [
       'error',
       {
+        groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc' /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */,
-          caseInsensitive: true /* ignore case. Options: [true, false] */
+          orderImportKind:
+            'asc' /* sort in ascending order various import kinds, e.g. imports prefixed with type or typeof, with same import path. Use desc to sort in descending order (default: ignore) */,
+          caseInsensitive: false /* ignore case. Options: [true, false] */
         }
       }
     ],
@@ -105,10 +107,6 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
-    },
-    'import/resolver': {
-      typescript: true,
-      node: true
     }
   }
 };
