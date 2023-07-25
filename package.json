@@ -6,5 +6,8 @@
   ],
   "devDependencies": {
     "lerna": "7.1.4"
+  },
+  "dependencies": {
+    "eslint-import-resolver-typescript": "3.5.5"
   }
 }
