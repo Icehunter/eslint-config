@@ -1,12 +1,12 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
+    'prettier',
     '@icehunter/react-app',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
-    'prettier'
+    'plugin:import/recommended',
+    'plugin:import/typescript'
   ],
   plugins: ['@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
@@ -107,6 +107,15 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    'import/resolver': {
+      typescript: {},
+      node: {
+        moduleDirectory: ['node_modules', 'src/']
+      }
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     }
   }
 };
