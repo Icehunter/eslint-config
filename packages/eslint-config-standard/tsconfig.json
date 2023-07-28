@@ -1,0 +1,7 @@
+{
+  "extends": "tsconfigs/nodejs-module",
+  "compilerOptions": {
+    "outDir": "lib"
+  },
+  "include": ["src/**/*.ts"]
+}

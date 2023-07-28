@@ -16,13 +16,13 @@
     "url": "git+https://github.com/Icehunter/eslint-config.git"
   },
   "scripts": {
-    "update": "npx npm-check -u"
+    "update": "npx npm-check -y -E"
   },
   "bugs": {
     "url": "https://github.com/Icehunter/eslint-config/issues"
   },
   "dependencies": {
-    "@icehunter/eslint-config-react-app": "^0.4.0"
+    "@icehunter/eslint-config-react-app": "workspace:*"
   },
   "gitHead": "5d829adc811f146278b91cba7e871a20f642d6fd",
   "publishConfig": {

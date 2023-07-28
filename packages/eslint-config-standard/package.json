@@ -1,13 +1,14 @@
 {
-  "name": "@icehunter/eslint-config",
-  "version": "3.2.0",
+  "name": "@icehunter/eslint-config-standard",
+  "version": "0.0.1",
   "author": "Ryan Wilson <syndicated.life@gmail.com>",
   "license": "MIT",
   "description": "standard eslint-config for app/react/base libraries",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint --ext .js .",
-    "update": "npx npm-check -y -E"
+    "update": "npx npm-check -y -E",
+    "prepublish": "npm run tsc"
   },
   "directories": {
     "lib": "lib"
@@ -23,24 +24,36 @@
     "url": "https://github.com/Icehunter/eslint-config/issues"
   },
   "dependencies": {
-    "@icehunter/eslint-config-react-app": "0.4.0",
-    "@icehunter/eslint-plugin-react-app": "0.4.0",
     "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "6.2.0",
+    "confusing-browser-globals": "1.0.11",
     "eslint": "8.45.0",
-    "eslint-config-prettier": "8.9.0",
-    "eslint-import-resolver-typescript": "3.5.5",
-    "eslint-plugin-flowtype": "8.0.3",
+    "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.28.0",
     "eslint-plugin-jsx-a11y": "6.7.1",
-    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-n": "16.0.1",
+    "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.33.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "prettier": "3.0.0",
     "typescript": "5.1.6"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "5d829adc811f146278b91cba7e871a20f642d6fd"
+  "devDependencies": {
+    "@types/confusing-browser-globals": "^1.0.0",
+    "@types/eslint": "8.44.1",
+    "@types/js-yaml": "4.0.5",
+    "@types/node": "20.4.5",
+    "@types/npm-package-arg": "6.1.1",
+    "@types/semver": "7.5.0",
+    "@types/ungap__structured-clone": "0.3.0",
+    "@ungap/structured-clone": "1.2.0",
+    "inclusion": "1.0.1",
+    "just-diff": "6.0.2",
+    "npm-package-arg": "10.1.0",
+    "read-pkg-up": "10.0.0",
+    "semver": "7.5.4",
+    "tsconfigs": "^5.0.0"
+  }
 }

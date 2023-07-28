@@ -1,0 +1,7 @@
+{
+  "watch": ["lib"],
+  "ignore": ["node_modules"],
+  "events": {
+    "restart": "npm run lint"
+  }
+}
