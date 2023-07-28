@@ -1,6 +1,6 @@
 {
   "name": "@icehunter/eslint-plugin-react-app",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "Ryan Wilson <syndicated.life@gmail.com>",
   "homepage": "https://github.com/Icehunter/eslint-config#readme",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "url": "https://github.com/Icehunter/eslint-config/issues"
   },
   "dependencies": {
-    "@icehunter/eslint-config-react-app": "0.5.0"
+    "@icehunter/eslint-config-react-app": "^0.6.0"
   },
   "gitHead": "67944f1924cb035e9dbcddef643a435454594a70",
   "publishConfig": {
