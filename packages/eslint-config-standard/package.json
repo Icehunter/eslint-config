@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint --ext .js .",
     "update": "npx npm-check -y -E",
-    "prepublish": "npm run tsc"
+    "prepublish": "tsc"
   },
   "directories": {
     "lib": "lib"
@@ -55,5 +55,6 @@
     "read-pkg-up": "10.0.0",
     "semver": "7.5.4",
     "tsconfigs": "^5.0.0"
-  }
+  },
+  "gitHead": "67944f1924cb035e9dbcddef643a435454594a70"
 }

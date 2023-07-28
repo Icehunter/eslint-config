@@ -26,7 +26,7 @@
     "babel-preset-react-app": "10.0.1",
     "confusing-browser-globals": "1.0.11"
   },
-  "gitHead": "5d829adc811f146278b91cba7e871a20f642d6fd",
+  "gitHead": "67944f1924cb035e9dbcddef643a435454594a70",
   "publishConfig": {
     "access": "public"
   }
