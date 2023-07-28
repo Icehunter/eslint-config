@@ -15,10 +15,10 @@ importers:
   packages/eslint-config:
     dependencies:
       '@icehunter/eslint-config-react-app':
-        specifier: 0.4.0
+        specifier: ^0.5.0
         version: link:../eslint-config-react-app
       '@icehunter/eslint-plugin-react-app':
-        specifier: 0.4.0
+        specifier: ^0.5.0
         version: link:../eslint-plugin-react-app
       '@typescript-eslint/eslint-plugin':
         specifier: 6.2.0

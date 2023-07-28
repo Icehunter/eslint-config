@@ -1,6 +1,6 @@
 {
   "name": "@icehunter/eslint-config",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "author": "Ryan Wilson <syndicated.life@gmail.com>",
   "license": "MIT",
   "description": "standard eslint-config for app/react/base libraries",
@@ -23,8 +23,8 @@
     "url": "https://github.com/Icehunter/eslint-config/issues"
   },
   "dependencies": {
-    "@icehunter/eslint-config-react-app": "0.4.0",
-    "@icehunter/eslint-plugin-react-app": "0.4.0",
+    "@icehunter/eslint-config-react-app": "^0.5.0",
+    "@icehunter/eslint-plugin-react-app": "^0.5.0",
     "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "6.2.0",
     "eslint": "8.45.0",
